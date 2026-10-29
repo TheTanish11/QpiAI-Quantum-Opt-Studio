@@ -1,4 +1,4 @@
-export const API = (import.meta.env.VITE_API_URL as string) || "http://127.0.0.1:8000";
+export const API = (import.meta.env.VITE_API_URL as string) || "/api";
 
 export async function api<T = any>(path: string, opts: { method?: string; org?: number; body?: unknown } = {}): Promise<T> {
   const r = await fetch(API + path, {
