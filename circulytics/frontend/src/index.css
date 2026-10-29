@@ -1,0 +1,21 @@
+:root{--bg:#f6f7f4;--card:#fff;--ink:#16221b;--mute:#5d6b62;--line:#dfe4dc;--brand:#1f7a4d;--bad:#b3261e;--warn:#9a6700;--ok:#1f7a4d}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1511;--card:#171f1a;--ink:#e6eee8;--mute:#9bab9f;--line:#27332b;--brand:#4fc38a;--bad:#ff8a80;--warn:#e3b341;--ok:#4fc38a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+header{padding:14px 20px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;background:var(--card)}
+h1{font-size:18px;margin:0}h1 span{color:var(--brand)}h2{font-size:16px;margin:0 0 10px}
+.tag{font-size:11px;padding:2px 8px;border-radius:99px;border:1px solid var(--warn);color:var(--warn);font-weight:600}
+nav{display:flex;flex-wrap:wrap;gap:4px;padding:10px 20px}nav button{background:none;border:1px solid transparent;color:var(--mute);padding:6px 12px;border-radius:8px;cursor:pointer;font:inherit}
+nav button.on{background:var(--card);border-color:var(--line);color:var(--ink);font-weight:600}
+main{padding:0 20px 40px;max-width:1150px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:14px;overflow-x:auto}
+.kpi b{display:block;font-size:26px}.kpi span{color:var(--mute);font-size:13px}
+table{border-collapse:collapse;width:100%;font-size:13.5px}th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--mute);font-weight:600}
+.pill{padding:1px 8px;border-radius:99px;font-size:12px;font-weight:600;border:1px solid var(--line)}
+.OK,.ACCEPTED,.RECONCILED,.ACTIVE,.EXECUTED{color:var(--ok);border-color:var(--ok)}
+.REJECTED,.FLAGGED,.FAILED{color:var(--bad);border-color:var(--bad)}
+.PROPOSED,.NOT_EXECUTED,.PENDING{color:var(--warn);border-color:var(--warn)}
+button.act{background:var(--brand);color:#fff;border:0;border-radius:8px;padding:6px 12px;cursor:pointer;font:inherit}
+select,button{font:inherit}select{padding:5px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.mono{font-family:ui-monospace,Menlo,monospace;font-size:12px;word-break:break-all}.mute{color:var(--mute)}.err{color:var(--bad)}
+@media (max-width:600px){main,nav,header{padding-left:12px;padding-right:12px}}

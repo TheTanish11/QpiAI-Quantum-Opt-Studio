@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:16
+    container_name: circulytics-db
+    environment:
+      POSTGRES_DB: circulytics
+      POSTGRES_USER: circulytics
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-dev_only_password}
+    ports: ["5432:5432"]
+    volumes: [circulytics_pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U circulytics -d circulytics"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  circulytics_pgdata:

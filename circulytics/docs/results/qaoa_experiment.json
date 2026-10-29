@@ -1,0 +1,43 @@
+{
+  "experiment": "QAOA p=1",
+  "device": "QpiAI-QSV-Local",
+  "n_qubits": 8,
+  "shots": 1000,
+  "sdk": "qpiai-quantum 0.3.0",
+  "input_hash": "f2c3ca90277732655f0397eb83849ec01655ac2b1b3fe28623f318cb81470168",
+  "classical_reference": {
+    "assignment": {
+      "Q1": "QF1",
+      "Q2": "QF2",
+      "Q3": "QF1"
+    },
+    "objective": 8200.0
+  },
+  "quantum_advantage_claimed": false,
+  "status": "EXECUTED",
+  "wall_time_s": 2.453,
+  "tuned_gamma": 0.07853981633974483,
+  "tuned_beta": 0.7853981633974483,
+  "distinct_bitstrings": 128,
+  "feasible_fraction": 0.089,
+  "best_feasible_candidate": {
+    "assignment": {
+      "Q1": "QF1",
+      "Q2": "QF2",
+      "Q3": "QF1"
+    },
+    "objective": 8200.0,
+    "shots": 9
+  },
+  "matches_classical_optimum": true,
+  "top_counts": {
+    "00100000": 17,
+    "10110010": 14,
+    "00100100": 13,
+    "01000001": 13,
+    "01110001": 13,
+    "01100001": 13,
+    "00000101": 13,
+    "11100010": 12
+  }
+}

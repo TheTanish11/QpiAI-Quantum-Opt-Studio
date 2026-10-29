@@ -1,0 +1,47 @@
+{
+  "greedy": {
+    "objective": 142961.1,
+    "feasible": true,
+    "runtime_s": 6e-05,
+    "deferred": [
+      "B10",
+      "B18",
+      "B03",
+      "B06",
+      "B12",
+      "B13"
+    ],
+    "loads": {
+      "F1-GreenLoop": 1500,
+      "F2-CircuMet": 1200,
+      "F3-LiRecover": 1320,
+      "F4-VoltCycle": 120
+    }
+  },
+  "exact": {
+    "objective": 83602.2,
+    "feasible": true,
+    "runtime_s": 0.01653,
+    "deferred": [
+      "B12"
+    ],
+    "loads": {
+      "F1-GreenLoop": 1500,
+      "F2-CircuMet": 1260,
+      "F3-LiRecover": 1380,
+      "F4-VoltCycle": 720
+    }
+  },
+  "qpiai_opt": {
+    "status": "NOT_EXECUTED",
+    "reason": "QPIAI_OPT_API_KEY not set: the model was built but no solve was submitted",
+    "error": null,
+    "sdk_version": "0.0.9",
+    "sdk_status": null,
+    "sdk_objective": null,
+    "wall_time_s": null,
+    "validation": null
+  },
+  "greedy_gap_vs_optimum_pct": 71.0,
+  "input_hash": "b21a1a3e72f934a214bb6163363c5858a0121392e491b5bdc743edcbb5ab4ea8"
+}
